@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../../lib/angular.js"></script>
+    <script src="app.js"></script>
+    <title>Expressions and Interpolation</title>
+</head>
+<body ng-app="MsgApp">
+    <h2>DI in AngularJS</h2>
+    <div ng-controller="MsgController">
+        Message is: <br>
+        {{ sayMessage() }}
+        <div>
+            <button ng-click="flipImage()">Flip Image</button>
+            <br>
+            <img ng-src="flip_{{state}}.jpeg">
+        </div>
+    </div>
+
+</body>
+</html>
